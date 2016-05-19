@@ -1,0 +1,29 @@
+log_list = log_list of first file
+num_questions = # of questions in the file(s)
+
+total = [0]*num_questions
+q = current question number(None at start)
+q_time = total time spent on one question
+
+for each log file passed in through the command line
+	for each question of the quiz(i: 0 - (num_questions-1))
+		for each element of log_list (excluding last element)
+			if q == None and element.index == i
+				if element is display
+					q_time = time of next element - time of current element
+					q = index of current element
+			else if element.index == q
+				q_time += time of next element - time of current element
+		
+		total[i] += q_time
+		q = None
+				
+	if we haven't run out of files
+		log_list = log_list of the next file
+	
+for each corresponding question in the log_files (excluding the last question)
+	calculate the average time spent on the question (total[i]/number of files in decimal format)
+	print the avg time
+
+calculate avg time for last question
+print the avg time				

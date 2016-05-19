@@ -1,0 +1,24 @@
+make a log_list of the first file
+make a marks_list of the first file
+compute number of questions in the file(s)
+passes[# of questions]
+fails[# of questions]
+
+
+
+
+for each file in command line(x: 1-length of args)
+	index = 0
+	for each mark in marks_list
+		if mark != 0
+			passes[index]++
+		else
+			fails[index]++
+		index++
+	if we haven't run out of files (x<(length of arguments - 1)
+		make a log_list of the next file(x+1)
+		make a marks_list of the next file(x+1)
+
+for each question
+	calculate pass ratio (passes[i]/(passes[i]+fails[i]))
+	print pass ratio + ','
