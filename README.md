@@ -1,2 +1,2 @@
 # Course-projects
-Programming assignments from school
+Programming assignments in Java, C++, and Python from school.
