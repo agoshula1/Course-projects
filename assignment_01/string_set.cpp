@@ -1,6 +1,5 @@
 /*
- * Alison Goshulak
- * V00806939
+ * 
  */
 
 #include <iostream>
